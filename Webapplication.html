@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            margin: 40px;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .company-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .company-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .company-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Job Application Form</h1>
+        <p>We are a dynamic tech company focused on building scalable web applications and digital solutions for clients around the globe. Join our team and help shape the future of technology.</p>
+
+        <form>
+            <label for="name">Applicant Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="role">Preferred Job Role:</label>
+            <select id="role" name="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="backend">Backend Developer</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="fullstack">Full Stack Developer</option>
+            </select>
+
+            <label>Skills:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                <label><input type="checkbox" name="skills" value="Python"> Python</label>
+                <label><input type="checkbox" name="skills" value="Java"> Java</label>
+            </div>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="text" id="resume" name="resume" placeholder="Upload functionality coming soon..." disabled>
+
+            <label for="why">Why do you want this job?</label>
+            <textarea id="why" name="why" rows="5" placeholder="Tell us why you’re a great fit..." required></textarea>
+
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <div class="company-link">
+            <a href="https://www.wipro.com" target="_blank">Visit our company page</a>
+        </div>
+    </div>
+
+</body>
+</html>
